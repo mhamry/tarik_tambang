@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piala</title>
+    <style>
+      body {
+        background: linear-gradient(#7ac2ff, #ffffff);
+        background-repeat: no-repeat;
+        height: 100vh;
+      }
+      .alert-pemenangA {
+        position: absolute;
+        text-align: center;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 250px;
+        height: 250px;
+        border: 1px solid black;
+        background-color: white;
+        padding: 20px;
+        background-image: url(image/piala.gif);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* display: none; */
+      }
+      .alert-pemenangB {
+        position: absolute;
+        text-align: center;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 250px;
+        height: 250px;
+        border: 1px solid black;
+        background-color: yellow;
+        padding: 20px;
+        background-image: url(image/piala.gif);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: none;
+      }
+
+      .alert-pemenangA a,
+      .alert-pemenangB a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 15px;
+        padding: 5px 10px;
+        background-color: greenyellow;
+        cursor: pointer;
+        border-radius: 7px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="alert-pemenangA">
+      <p>Pemenangnya adalah</p>
+      <h1>TIM A</h1>
+      <a href="index.html">Play Again</a>
+    </div>
+    <div class="alert-pemenangB">
+      <p>Pemenangnya adalah</p>
+      <h1>TIM B</h1>
+      <a href="index.html">Play Again</a>
+    </div>
+  </body>
+</html>

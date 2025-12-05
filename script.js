@@ -78,7 +78,9 @@ function jawabA() {
 
   document.getElementById("pertanyaanA").textContent = pertanyaanA[indexA].t;
 
-  cekPemenang();
+  setTimeout(() => {
+    cekPemenang();
+  }, 1000);
 }
 
 // ==================================================
@@ -105,7 +107,9 @@ function jawabB() {
 
   document.getElementById("pertanyaanB").textContent = pertanyaanB[indexB].t;
 
-  cekPemenang();
+  setTimeout(() => {
+    cekPemenang();
+  }, 1000);
 }
 
 // ==========================
