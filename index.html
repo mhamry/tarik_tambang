@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarik Tambang</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Tarik Tambang Game</h1>
+    <div class="gambar"><img src="image/tarik-tambang.png" alt="" /></div>
+    <div class="container">
+      <div class="line"></div>
+    </div>
+    <div class="pertanyaan-wrapper">
+      <div class="kolomA">
+        <h2>Tim A</h2>
+        <p id="pertanyaanA"></p>
+        <input type="text" id="jawabanA" placeholder="Jawaban Tim A" />
+        <button onclick="jawabA()">Jawab</button>
+        <!-- Keyboard Tim A -->
+        <div id="keyboardA" class="keyboard"></div>
+      </div>
+
+      <div class="kolomB">
+        <h2>Tim B</h2>
+        <p id="pertanyaanB"></p>
+        <input type="text" id="jawabanB" placeholder="Jawaban Tim B" />
+        <button onclick="jawabB()">Jawab</button>
+        <!-- Keyboard Tim B -->
+        <div id="keyboardB" class="keyboard"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
