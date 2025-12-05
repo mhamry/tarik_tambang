@@ -1,8 +1,8 @@
 const gambar = document.querySelector(".gambar img");
 
 // Audio
-const soundBenar = new Audio("sound/correct.mp3");
-const soundSalah = new Audio("sound/wrong.mp3");
+const soundBenar = new Audio("sound/benar.mp3");
+const soundSalah = new Audio("sound/salah.mp3");
 const soundMenang = new Audio("sound/winner.mp3");
 
 let posisi = 0;
