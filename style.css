@@ -124,8 +124,6 @@ button:hover {
   .kolomA,
   .kolomB {
     padding: 5px;
-    width: 100%;
-    margin-bottom: 10px;
   }
   .key {
     width: 20px;
@@ -160,15 +158,13 @@ button:hover {
   }
 
   .container {
-    margin-top: -90px;
+    margin-top: -80px;
   }
 
   .line {
     width: 3px;
     height: 50px;
     background-color: black;
-  }
-  .pertanyaan-wrapper {
-    display: block;
+    margin-bottom: 20px;
   }
 }
