@@ -58,6 +58,11 @@ h1 {
   margin-bottom: 15px;
 }
 
+#pertanyaanA,
+#pertanyaanB {
+  font-weight: bold;
+}
+
 input {
   width: 100%;
   padding: 10px;
@@ -123,6 +128,7 @@ button:hover {
   transform: translate(-50%);
   width: 250px;
   height: 250px;
+  border-radius: 10px;
   border: 1px solid black;
   background-color: white;
   padding: 20px;
@@ -140,14 +146,20 @@ button:hover {
   transform: translate(-50%);
   width: 250px;
   height: 250px;
+  border-radius: 10px;
   border: 1px solid black;
-  background-color: yellow;
+  background-color: white;
   padding: 20px;
   background-image: url(image/piala.gif);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: none;
+}
+
+.alert-pemenangA h1,
+.alert-pemenangB h1 {
+  margin-bottom: 145px;
 }
 
 .alert-pemenangA a,
@@ -159,6 +171,7 @@ button:hover {
   background-color: greenyellow;
   cursor: pointer;
   border-radius: 7px;
+  border: 4px solid yellow;
 }
 
 @media (max-width: 578px) {

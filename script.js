@@ -47,6 +47,15 @@ const pertanyaanB = [
   // tambahkan sampai 20
 ];
 
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+shuffle(pertanyaanA);
+shuffle(pertanyaanB);
+
 let indexA = 0;
 let indexB = 0;
 
@@ -123,14 +132,14 @@ function cekPemenang() {
     soundMenang.play();
     // alert("TIM A MENANG!");
     alertPemenangA.style.display = "block";
-    game.style.opacity = "0.2";
+    game.style.opacity = "0.1";
   }
 
   if (posisi >= 28) {
     soundMenang.play();
     // alert("TIM B MENANG!");
     alertPemenangB.style.display = "block";
-    game.style.opacity = "0.2";
+    game.style.opacity = "0.1";
   }
 }
 
