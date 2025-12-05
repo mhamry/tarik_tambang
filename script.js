@@ -116,14 +116,21 @@ function jawabB() {
 // CEK PEMENANG
 // ==========================
 function cekPemenang() {
+  const alertPemenangA = document.querySelector(".alert-pemenangA");
+  const alertPemenangB = document.querySelector(".alert-pemenangB");
+  const game = document.querySelector(".game");
   if (posisi <= -25) {
     soundMenang.play();
-    alert("TIM A MENANG!");
+    // alert("TIM A MENANG!");
+    alertPemenangA.style.display = "block";
+    game.style.opacity = "0.2";
   }
 
-  if (posisi >= 25) {
+  if (posisi >= 28) {
     soundMenang.play();
-    alert("TIM B MENANG!");
+    // alert("TIM B MENANG!");
+    alertPemenangB.style.display = "block";
+    game.style.opacity = "0.2";
   }
 }
 
