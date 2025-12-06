@@ -181,7 +181,7 @@ button:hover {
 @media (max-width: 578px) {
   h1 {
     font-size: 25px;
-    margin-bottom: 100px;
+    margin-bottom: 190px;
   }
 
   .pertanyaan-wrapper {
@@ -189,7 +189,7 @@ button:hover {
   }
 
   .gambar {
-    margin-top: -170px;
+    margin-top: -140px;
   }
   .gambar img {
     width: 80%;
@@ -231,14 +231,14 @@ button:hover {
   }
 
   .container {
-    margin-top: -80px;
-    margin-bottom: 60px;
+    margin-top: -150px;
+    margin-bottom: 70px;
   }
 
   .line {
     width: 3px;
     height: 50px;
     background-color: black;
-    margin-top: 60px;
+    /* margin-bottom: 60px; */
   }
 }
