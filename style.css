@@ -197,6 +197,8 @@ button:hover {
   .kolomA,
   .kolomB {
     padding: 5px;
+    width: 50%;
+    gap: 9px;
   }
   .key {
     width: 20px;
