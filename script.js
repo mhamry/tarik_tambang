@@ -37,7 +37,7 @@ const pertanyaanB = [
   { t: "Bahasa Inggris 'ungu'?", j: "purple" },
   { t: "Bahasa Inggris 'hijau'?", j: "green" },
   { t: "Bahasa Inggris 'pink'?", j: "pink" },
-  { t: "Bahasa Inggris 'abu-abu'?", j: "gery" },
+  { t: "Bahasa Inggris 'abu-abu'?", j: "grey" },
   { t: "Bahasa Inggris 'ayah'?", j: "father" },
   { t: "Bahasa Inggris 'ibu'?", j: "mother" },
   { t: "Bahasa Inggris 'saudara perempuan'?", j: "sister" },
