@@ -2,12 +2,14 @@ body {
   background: linear-gradient(#7ac2ff, #ffffff);
   font-family: Arial, sans-serif;
   position: relative;
+  background-repeat: no-repeat;
 }
 
 h1 {
   text-align: center;
   font-size: 30px;
   margin: 20px;
+  margin-bottom: 70px;
 }
 
 .gambar {
@@ -15,6 +17,8 @@ h1 {
   margin: 20px auto;
   display: flex;
   justify-content: center;
+  margin-top: -150px;
+  margin-bottom: 50px;
 }
 
 .gambar img {
@@ -26,7 +30,7 @@ h1 {
   display: flex;
   justify-content: center;
   margin: auto;
-  margin-top: -150px;
+  /* margin-top: -180px; */
 }
 
 .line {
@@ -178,6 +182,14 @@ button:hover {
   h1 {
     font-size: 25px;
   }
+
+  .pertanyaan-wrapper {
+    margin-top: -60px;
+  }
+
+  .gambar {
+    margin-top: -70px;
+  }
   .gambar img {
     width: 80%;
   }
@@ -225,5 +237,6 @@ button:hover {
     width: 3px;
     height: 50px;
     background-color: black;
+    margin-top: 60px;
   }
 }
