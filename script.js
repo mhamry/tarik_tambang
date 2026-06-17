@@ -4,6 +4,11 @@ const gambar = document.querySelector(".gambar img");
 const soundBenar = new Audio("sound/benar.mp3");
 const soundSalah = new Audio("sound/salah.mp3");
 const soundMenang = new Audio("sound/winner.mp3");
+const soundSuporter = new Audio("sound/supporter.mp3");
+
+document.body.addEventListener("DOMContentLoaded", function () {
+  soundSuporter.play();
+});
 
 let posisi = 0;
 
@@ -201,3 +206,23 @@ function buatKeyboard(idKeyboard, inputTarget) {
 // Buat 2 keyboard: untuk Tim A dan Tim B
 buatKeyboard("keyboardA", "jawabanA");
 buatKeyboard("keyboardB", "jawabanB");
+
+//Putar backsound supporter
+// Fungsi untuk memutar suara supporter sekali saja saat layar diklik
+function putarBacksound() {
+  soundSuporter.loop = true; // Opsional: Agar lagu otomatis mengulang terus saat habis
+  soundSuporter.volume = 0.5; // Opsional: Mengecilkan suara supporter agar tidak menutupi sound benar/salah (rentang 0.0 - 1.0)
+
+  soundSuporter
+    .play()
+    .then(() => {
+      // Jika berhasil diputar, hapus sensor klik agar fungsi ini tidak berjalan terus-menerus setiap kali diklik
+      document.removeEventListener("click", putarBacksound);
+    })
+    .catch((error) => {
+      console.log("Autoplay diblokir oleh browser, menunggu interaksi pengguna.");
+    });
+}
+
+// Pasang sensor klik global pada dokumen
+document.addEventListener("click", putarBacksound);
