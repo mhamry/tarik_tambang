@@ -6,10 +6,6 @@ const soundSalah = new Audio("sound/salah.mp3");
 const soundMenang = new Audio("sound/winner.mp3");
 const soundSuporter = new Audio("sound/supporter.mp3");
 
-document.body.addEventListener("DOMContentLoaded", function () {
-  soundSuporter.play();
-});
-
 let posisi = 0;
 
 // 20 pertanyaan Tim A
@@ -89,7 +85,8 @@ document.getElementById("pertanyaanB").textContent = pertanyaanB[indexB].t;
 // ==================================================
 //                 JAWAB TIM A
 // ==================================================
-function jawabA() {
+const jawabA = document.querySelector(".jawabA");
+jawabA.onclick = () => {
   const inputA = document.getElementById("jawabanA").value.toLowerCase().trim();
   document.getElementById("jawabanA").value = "";
 
@@ -113,12 +110,13 @@ function jawabA() {
   setTimeout(() => {
     cekPemenang();
   }, 1000);
-}
+};
 
 // ==================================================
 //                 JAWAB TIM B
 // ==================================================
-function jawabB() {
+const jawabB = document.querySelector(".jawabB");
+jawabB.onclick = () => {
   const inputB = document.getElementById("jawabanB").value.toLowerCase().trim();
   document.getElementById("jawabanB").value = "";
 
@@ -142,7 +140,7 @@ function jawabB() {
   setTimeout(() => {
     cekPemenang();
   }, 1000);
-}
+};
 
 // ==========================
 // CEK PEMENANG
