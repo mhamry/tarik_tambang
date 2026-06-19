@@ -169,12 +169,14 @@ function cekPemenang() {
 function buatKeyboard(idKeyboard, inputTarget) {
   const keyboard = document.getElementById(idKeyboard);
   const keys = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  const inputEl = document.getElementById("inputTarget");
 
   // Tambah tombol huruf
   keys.split("").forEach((huruf) => {
     const tombol = document.createElement("div");
     tombol.className = "key";
     tombol.textContent = huruf;
+    tombol.onmousedown = (e) => e.preventDefault();
     tombol.onclick = () => {
       document.getElementById(inputTarget).value += huruf.toLowerCase();
     };
@@ -185,8 +187,10 @@ function buatKeyboard(idKeyboard, inputTarget) {
   const space = document.createElement("div");
   space.className = "key big";
   space.textContent = "SPACE";
+  space.onmousedown = (e) => e.preventDefault();
   space.onclick = () => {
     document.getElementById(inputTarget).value += " ";
+    inputEl.focus();
   };
   keyboard.appendChild(space);
 
@@ -194,9 +198,11 @@ function buatKeyboard(idKeyboard, inputTarget) {
   const back = document.createElement("div");
   back.className = "key big";
   back.textContent = "DELETE";
+  back.onmousedown = (e) => e.preventDefault();
   back.onclick = () => {
     let inp = document.getElementById(inputTarget);
     inp.value = inp.value.slice(0, -1);
+    inputEl.focus();
   };
   keyboard.appendChild(back);
 }
