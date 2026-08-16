@@ -169,7 +169,7 @@ function cekPemenang() {
 function buatKeyboard(idKeyboard, inputTarget) {
   const keyboard = document.getElementById(idKeyboard);
   const keys = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  const inputEl = document.getElementById("inputTarget");
+  const inputEl = document.getElementById(inputTarget);
 
   // Tambah tombol huruf
   keys.split("").forEach((huruf) => {
