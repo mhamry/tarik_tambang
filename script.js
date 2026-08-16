@@ -33,8 +33,6 @@ const pertanyaanA = [
   { t: "Bahasa Inggris: Kursi", j: "chair" },
   { t: "Bahasa Inggris: Tas", j: "bag" },
   { t: "Bahasa Inggris: Buku", j: "book" },
-
-  // tambahkan sampai 20
 ];
 
 // 20 pertanyaan Tim B
@@ -62,8 +60,6 @@ const pertanyaanB = [
   { t: "Bahasa Inggris: Kursi", j: "chair" },
   { t: "Bahasa Inggris: Tas", j: "bag" },
   { t: "Bahasa Inggris: Buku", j: "book" },
-
-  // tambahkan sampai 20
 ];
 
 function shuffle(array) {
